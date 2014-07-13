@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Configurations\stdafx.h" />
+    <ClInclude Include="Framework\ClientWindowController\ClientWindowController.h">
+      <Filter>Framework\ClientWindowController</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Common\FrameworkCommon.h">
+      <Filter>Framework\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DeviceController\DeviceController.h">
+      <Filter>Framework\DeviceController</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DirectXTKController\DirectXTKController.h">
+      <Filter>Framework\DirectXTKController</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\MainFrame\MainFrame.h">
+      <Filter>Framework\MainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="DesignPatternTemplates\Singleton.h">
+      <Filter>Libraries\DesignPatternTemplates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Configurations\ProgramConfig.h">
+      <Filter>Configurations</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Configurations\stdafx.cpp" />
+    <ClCompile Include="Framework\ClientWindowController\ClientWindowController.cpp">
+      <Filter>Framework\ClientWindowController</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Common\FrameworkCommon.cpp">
+      <Filter>Framework\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DeviceController\DeviceController.cpp">
+      <Filter>Framework\DeviceController</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DirectXTKController\DirectXTKController.cpp">
+      <Filter>Framework\DirectXTKController</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\MainFrame\MainFrame.cpp">
+      <Filter>Framework\MainFrame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{0908c053-059f-4560-9cab-f19d5e43c84b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\ClientWindowController">
+      <UniqueIdentifier>{f8bdf43e-3512-44e1-b77c-6c78bae9c4c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Common">
+      <UniqueIdentifier>{f21a0f6b-68c5-483e-b395-62c20f2cd50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\DeviceController">
+      <UniqueIdentifier>{05417fbc-fc58-43dd-a2da-d93d70607785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\DirectXTKController">
+      <UniqueIdentifier>{5cf85f78-2e07-495d-8414-01e980db5c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\MainFrame">
+      <UniqueIdentifier>{f665afb9-b511-4c27-b3f8-502f44807b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{1288f3d2-e1fb-4d99-91dc-7ffca9d4b8ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\DesignPatternTemplates">
+      <UniqueIdentifier>{58e1cec5-8d52-48e0-8f8d-000c20195511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configurations">
+      <UniqueIdentifier>{67bda760-e772-4a66-b4ea-edf5368dfc1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Properties">
+      <UniqueIdentifier>{3a0a6a1f-99b6-40a3-a076-0c0b7fffb4b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ConfigurationsPATH.props">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="Properties\DesignPatternPATH.props">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="Properties\Debug\DirectXTK Debug.props">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="Properties\Release\DirectXTK Release.props">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="Properties\Debug\DirectXTKPATH Debug.props">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="Properties\Release\DirectXTKPATH Release.props">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="Properties\FrameworkConfig.props">
+      <Filter>Properties</Filter>
+    </None>
+  </ItemGroup>
+</Project>
