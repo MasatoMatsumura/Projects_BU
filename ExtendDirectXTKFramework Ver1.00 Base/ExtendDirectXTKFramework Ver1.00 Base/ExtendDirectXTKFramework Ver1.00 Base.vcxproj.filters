@@ -23,6 +23,10 @@
     <ClInclude Include="Game\Configurations\ProgramConfig.h">
       <Filter>Configurations</Filter>
     </ClInclude>
+    <ClInclude Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.h" />
+    <ClInclude Include="Libraries\DesignPatternTemplates\Singleton.h" />
+    <ClInclude Include="Libraries\DataManagingLibrary\TextureManager.h" />
+    <ClInclude Include="Libraries\Configurations\ExtendLibraryTypeDefines.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -42,6 +46,8 @@
     <ClCompile Include="Framework\MainFrame\MainFrame.cpp">
       <Filter>Framework\MainFrame</Filter>
     </ClCompile>
+    <ClCompile Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.cpp" />
+    <ClCompile Include="Libraries\DataManagingLibrary\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Framework">

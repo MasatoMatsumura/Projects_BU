@@ -18,11 +18,10 @@ namespace Framework
 			~DirectXTKController( );
 
 		//■クラス定義
-		private:
+		public:
 			std::unique_ptr<DirectX::CommonStates>	g_pCommonStates;
 			std::unique_ptr<DirectX::SpriteBatch>	g_pSpriteBatch;
 
-		public:
 			//■DirectXTKモジュールの初期化
 			void InitializeDirectXTK( );
 	};
