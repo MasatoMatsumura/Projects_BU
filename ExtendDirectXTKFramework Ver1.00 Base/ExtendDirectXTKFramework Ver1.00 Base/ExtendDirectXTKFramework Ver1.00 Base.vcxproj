@@ -83,7 +83,10 @@
     <ClInclude Include="Framework\DirectXTKController\DirectXTKController.h" />
     <ClInclude Include="Framework\MainFrame\MainFrame.h" />
     <ClInclude Include="Framework\ClientWindowController\ClientWindowController.h" />
+    <ClInclude Include="Game\Configurations\GameTypeDefines.h" />
     <ClInclude Include="Game\Configurations\ProgramConfig.h" />
+    <ClInclude Include="Game\Scenes\SceneBase.h" />
+    <ClInclude Include="Game\Scenes\TestScene.h" />
     <ClInclude Include="Libraries\Configurations\ExtendLibraryTypeDefines.h" />
     <ClInclude Include="Libraries\DataManagingLibrary\TextureManager.h" />
     <ClInclude Include="Libraries\DesignPatternTemplates\Singleton.h" />

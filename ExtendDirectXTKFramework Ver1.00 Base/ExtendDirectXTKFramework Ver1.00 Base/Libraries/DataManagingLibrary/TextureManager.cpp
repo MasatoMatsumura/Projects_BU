@@ -5,6 +5,16 @@ using namespace std;
 using namespace ExtendLibrary;
 using namespace ExtendLibrary::DataManagingLibrary;
 
+TextureManager::TextureManager( ) : m_NUM_LoadedTextures( 0 )
+{
+
+}
+
+TextureManager::~TextureManager( )
+{
+
+}
+
 textureID_t TextureManager::Load_Texture( textureFileName_t fileName )
 {
 	if( fileName == nullptr ) return 0;
