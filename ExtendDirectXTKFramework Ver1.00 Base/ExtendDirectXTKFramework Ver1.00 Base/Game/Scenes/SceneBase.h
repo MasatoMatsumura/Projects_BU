@@ -15,12 +15,12 @@ namespace Game
 				Config::TypeDefines::attribute_t	m_Attribute;
 
 			public:
-				explicit SceneBase( );
-				virtual ~SceneBase( );
+				explicit SceneBase( ){ };
+				virtual ~SceneBase( ){ };
 
-				virtual void Initialize( );
-				virtual void Update( );
-				virtual void Draw( );
+				virtual void Initialize( ) = 0;
+				virtual void Update( bool& FLG_Execute ) = 0;
+				virtual void Draw( ) = 0;
 		};
 	};
 };

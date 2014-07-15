@@ -24,6 +24,10 @@ namespace Framework
 
 			//¡DirectXTKƒ‚ƒWƒ…[ƒ‹‚Ì‰Šú‰»
 			void InitializeDirectXTK( );
+
+			//¡
+			void DrawDefaultSpriteBegin( );
+			void DrawSpriteEnd( );
 	};
 }
 

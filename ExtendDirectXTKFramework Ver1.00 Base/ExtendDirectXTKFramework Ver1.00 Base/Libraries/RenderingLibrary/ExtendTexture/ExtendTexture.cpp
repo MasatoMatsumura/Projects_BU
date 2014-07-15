@@ -62,5 +62,5 @@ void ExtendTexture::AddLocalPosition( Vector2 velocityAddLocalPosition )
 
 void ExtendTexture::Draw( Vector2 position )
 {
-	DXTKCONTROLLER->g_pSpriteBatch->Draw( TEXTUREMANAGER->Get_Texture( this->m_TextureID ), position );
+	DXTKCONTROLLER->g_pSpriteBatch->Draw( TEXTUREMANAGER->Get_Texture( this->m_TextureID ), position, DirectX::Colors::White );
 }

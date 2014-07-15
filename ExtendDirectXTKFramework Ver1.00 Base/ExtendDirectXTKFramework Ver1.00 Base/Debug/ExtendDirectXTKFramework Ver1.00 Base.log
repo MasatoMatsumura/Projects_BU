@@ -1,8 +1,8 @@
-﻿2014/07/14 21:15:05 にビルドを開始しました。
+﻿2014/07/15 15:12:23 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Libraries\Configurations\\" /IC:\DirectXTK\Inc /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Configurations\\" /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Libraries\DesignPatternTemplates\\" /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\\" /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Game\Configurations\\" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ExtendDirectXTKFramework Ver1.00 Base.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /FIstdafx.h /analyze- /errorReport:prompt Libraries\DataManagingLibrary\TextureManager.cpp
-         TextureManager.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Libraries\Configurations\\" /IC:\DirectXTK\Inc /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Configurations\\" /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Libraries\DesignPatternTemplates\\" /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\\" /I"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\ExtendDirectXTKFramework Ver1.00 Base\Game\Configurations\\" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ExtendDirectXTKFramework Ver1.00 Base.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /FIstdafx.h /analyze- /errorReport:prompt Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.cpp
+         ExtendTexture.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\Debug\ExtendDirectXTKFramework Ver1.00 Base.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\DirectXTK\Bin\Desktop_2013\Win32\Debug d3d11.lib DirectXTK.lib Xinput9_1_0.lib dsound.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\Debug\ExtendDirectXTKFramework Ver1.00 Base.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\s132171\Documents\Visual Studio 2013\CommitProjects\ExtendDirectXTKFramework Ver1.00 Base\Debug\ExtendDirectXTKFramework Ver1.00 Base.lib" /MACHINE:X86 Debug\stdafx.obj
          Debug\ClientWindowController.obj
@@ -10,6 +10,7 @@
          Debug\DeviceController.obj
          Debug\DirectXTKController.obj
          Debug\MainFrame.obj
+         Debug\TestScene.obj
          Debug\TextureManager.obj
          Debug\ExtendTexture.obj
          Debug\Main.obj
@@ -18,4 +19,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:01.92
+経過時間 00:00:00.87

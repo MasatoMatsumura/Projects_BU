@@ -51,6 +51,7 @@
     </ClCompile>
     <ClCompile Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.cpp" />
     <ClCompile Include="Libraries\DataManagingLibrary\TextureManager.cpp" />
+    <ClCompile Include="Game\Scenes\TestScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Framework">

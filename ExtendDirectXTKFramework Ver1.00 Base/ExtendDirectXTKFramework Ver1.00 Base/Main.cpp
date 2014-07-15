@@ -7,6 +7,7 @@
 //	@brief	
 //-----------------------------------------------------------------------------------------------
 #include "Framework\MainFrame\MainFrame.h"
+#include "Game\Scenes\TestScene.h"
 
 //===============================================================================================
 //	TODO :	追加のusingディレクティブは以下に記述
@@ -14,7 +15,15 @@
 //	@namespace	Framework
 //	@brief		ExtendDirectXTKフレームワークのシステムが格納されている空間
 //-----------------------------------------------------------------------------------------------
+using namespace std;
 using namespace Framework;
+using namespace Game;
+
+//===============================================================================================
+//	TODO :	追加のグローバル変数は以下に記述
+//===============================================================================================
+//■
+static unique_ptr<Scenes::TestScene>	pTestScene;
 
 //===============================================================================================
 //	TODO :	プログラムの実装は以下に記述
@@ -34,6 +43,9 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdL
 
 	//■フレームワークの初期化
 	FRAMEWORK->InitializeFramework( );
+
+	//■ゲームの初期化
+	FRAMEWORK->InitializeGame( );
 
 	//■Windowsのメッセージを受け取るメッセンジャーを作成
 	MSG messenger = { 0 };
@@ -66,7 +78,8 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdL
 //-----------------------------------------------------------------------------------------------
 void MainFrame::InitializeGame( )
 {
-	
+	pTestScene.reset( new Scenes::TestScene( ) );
+	pTestScene->Initialize( );
 }
 
 //===============================================================================================
@@ -97,7 +110,7 @@ bool MainFrame::ExecuteFramework( )
 //-----------------------------------------------------------------------------------------------
 void MainFrame::UpdateFramework( )
 {
-
+	pTestScene->Update( this->FLG_Execute );
 }
 
 //===============================================================================================
@@ -114,6 +127,14 @@ void MainFrame::DrawFramework( )
 	D3DDEVICES->pImmediateContext->ClearRenderTargetView( D3DDEVICES->s_pRenderTargetView, ClearColor );
 	// 深度ステンシルバッファのクリア
 	D3DDEVICES->pImmediateContext->ClearDepthStencilView( D3DDEVICES->s_pDepthStencilView, D3D11_CLEAR_DEPTH, 1.0f, 0 );
+
+
+	//	TODO :	追加の描画処理は以下
+	DXTKCONTROLLER->DrawDefaultSpriteBegin( );
+	pTestScene->Draw( );
+	DXTKCONTROLLER->DrawSpriteEnd( );
+	//	TODO :	追加の描画処理は以上
+
 
 	// バックバッファとフロントバッファを入れ替える（画面のリフレッシュレートに合わせる）
 	D3DDEVICES->s_pSwapChain->Present( 0, 0 );

@@ -104,6 +104,7 @@
     <ClCompile Include="Framework\DeviceController\DeviceController.cpp" />
     <ClCompile Include="Framework\DirectXTKController\DirectXTKController.cpp" />
     <ClCompile Include="Framework\MainFrame\MainFrame.cpp" />
+    <ClCompile Include="Game\Scenes\TestScene.cpp" />
     <ClCompile Include="Libraries\DataManagingLibrary\TextureManager.cpp" />
     <ClCompile Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.cpp" />
     <ClCompile Include="Main.cpp" />

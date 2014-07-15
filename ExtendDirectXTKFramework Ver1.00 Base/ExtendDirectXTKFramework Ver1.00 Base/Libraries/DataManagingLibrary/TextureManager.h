@@ -23,7 +23,7 @@ namespace ExtendLibrary
 			//¡ƒNƒ‰ƒX’è‹`
 			private:
 				int m_NUM_LoadedTextures;
-				std::unordered_map<textureFileName_t, std::unique_ptr<ID3D11ShaderResourceView*>>	m_TextureMap;
+				std::unordered_map<textureFileName_t, std::shared_ptr<ID3D11ShaderResourceView*>>	m_TextureMap;
 				std::vector<textureFileName_t>	m_TextureIDLink;
 			public:
 				textureID_t Load_Texture( textureFileName_t fileName );
