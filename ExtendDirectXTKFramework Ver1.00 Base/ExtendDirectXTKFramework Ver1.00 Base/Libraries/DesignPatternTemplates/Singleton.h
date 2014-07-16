@@ -1,11 +1,37 @@
+//======================================================================
+//	@headerfile	Singleton.h
+//	@brief		シングルトンパターンのテンプレートクラス
+//	@author		Masato Matsumura
+//
+//	@version	1.00
+//	@since		FrameworkVer1.00( 2014/07/10 )
+//	@date		2014/07/10
+//======================================================================
+//	@brief	インクルードガード
+//----------------------------------------------------------------------
 #ifndef _DESIGNPATTERN_SINGLETON_INCLUDED_
 #define _DESIGNPATTERN_SINGLETON_INCLUDED_
-#include <memory>
+
+
 
 namespace DesignPattern
 {
-	template<class instanceType>
-	class Singleton
+//======================================================================
+//	@class	DesignPattern::Singleton "Singleton.h"
+//	@brief	{
+//				シングルトンパターンのテンプレートクラス
+//				使用する際は以下のようにクラスを定義
+//					class Type : public DesignPattern::Singleton<Type>
+//					[
+//						friend class DesignPattern::Singleton<Type>;
+//						private:
+//							Type( );
+//						public:
+//							~Type( );
+//					];
+//			}
+//======================================================================
+	template<class instanceType> class Singleton
 	{
 		protected:
 			//■コンストラクタ

@@ -35,19 +35,19 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="Properties\ConfigurationsPATH.props" />
     <Import Project="Properties\DesignPatternPATH.props" />
+    <Import Project="Properties\ExtendLibraryConfig.props" />
     <Import Project="Properties\FrameworkConfig.props" />
     <Import Project="Properties\Debug\DirectXTK Debug.props" />
     <Import Project="Properties\Debug\DirectXTKPATH Debug.props" />
-    <Import Project="Properties\ExtendLibraryConfig.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="Properties\ConfigurationsPATH.props" />
     <Import Project="Properties\DesignPatternPATH.props" />
+    <Import Project="Properties\ExtendLibraryConfig.props" />
     <Import Project="Properties\FrameworkConfig.props" />
     <Import Project="Properties\Release\DirectXTK Release.props" />
     <Import Project="Properties\Release\DirectXTKPATH Release.props" />
-    <Import Project="Properties\ExtendLibraryConfig.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -77,7 +77,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Configurations\stdafx.h" />
-    <ClInclude Include="DesignPatternTemplates\Singleton.h" />
     <ClInclude Include="Framework\Common\FrameworkCommon.h" />
     <ClInclude Include="Framework\DeviceController\DeviceController.h" />
     <ClInclude Include="Framework\DirectXTKController\DirectXTKController.h" />
@@ -85,12 +84,8 @@
     <ClInclude Include="Framework\ClientWindowController\ClientWindowController.h" />
     <ClInclude Include="Game\Configurations\GameTypeDefines.h" />
     <ClInclude Include="Game\Configurations\ProgramConfig.h" />
-    <ClInclude Include="Game\Scenes\SceneBase.h" />
-    <ClInclude Include="Game\Scenes\TestScene.h" />
     <ClInclude Include="Libraries\Configurations\ExtendLibraryTypeDefines.h" />
-    <ClInclude Include="Libraries\DataManagingLibrary\TextureManager.h" />
     <ClInclude Include="Libraries\DesignPatternTemplates\Singleton.h" />
-    <ClInclude Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configurations\stdafx.cpp">
@@ -104,9 +99,6 @@
     <ClCompile Include="Framework\DeviceController\DeviceController.cpp" />
     <ClCompile Include="Framework\DirectXTKController\DirectXTKController.cpp" />
     <ClCompile Include="Framework\MainFrame\MainFrame.cpp" />
-    <ClCompile Include="Game\Scenes\TestScene.cpp" />
-    <ClCompile Include="Libraries\DataManagingLibrary\TextureManager.cpp" />
-    <ClCompile Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +106,7 @@
     <None Include="Properties\Debug\DirectXTK Debug.props" />
     <None Include="Properties\Debug\DirectXTKPATH Debug.props" />
     <None Include="Properties\DesignPatternPATH.props" />
+    <None Include="Properties\ExtendLibraryConfig.props" />
     <None Include="Properties\FrameworkConfig.props" />
     <None Include="Properties\Release\DirectXTK Release.props" />
     <None Include="Properties\Release\DirectXTKPATH Release.props" />

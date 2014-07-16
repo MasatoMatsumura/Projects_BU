@@ -17,19 +17,18 @@
     <ClInclude Include="Framework\MainFrame\MainFrame.h">
       <Filter>Framework\MainFrame</Filter>
     </ClInclude>
-    <ClInclude Include="DesignPatternTemplates\Singleton.h">
-      <Filter>Libraries\DesignPatternTemplates</Filter>
-    </ClInclude>
     <ClInclude Include="Game\Configurations\ProgramConfig.h">
       <Filter>Configurations</Filter>
     </ClInclude>
-    <ClInclude Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.h" />
-    <ClInclude Include="Libraries\DesignPatternTemplates\Singleton.h" />
-    <ClInclude Include="Libraries\DataManagingLibrary\TextureManager.h" />
-    <ClInclude Include="Libraries\Configurations\ExtendLibraryTypeDefines.h" />
-    <ClInclude Include="Game\Scenes\TestScene.h" />
-    <ClInclude Include="Game\Scenes\SceneBase.h" />
-    <ClInclude Include="Game\Configurations\GameTypeDefines.h" />
+    <ClInclude Include="Libraries\DesignPatternTemplates\Singleton.h">
+      <Filter>Libraries\DesignPatternTemplates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Configurations\GameTypeDefines.h">
+      <Filter>Configurations</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Configurations\ExtendLibraryTypeDefines.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -49,9 +48,6 @@
     <ClCompile Include="Framework\MainFrame\MainFrame.cpp">
       <Filter>Framework\MainFrame</Filter>
     </ClCompile>
-    <ClCompile Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.cpp" />
-    <ClCompile Include="Libraries\DataManagingLibrary\TextureManager.cpp" />
-    <ClCompile Include="Game\Scenes\TestScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Framework">
@@ -84,6 +80,12 @@
     <Filter Include="Properties">
       <UniqueIdentifier>{3a0a6a1f-99b6-40a3-a076-0c0b7fffb4b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Properties\Debug">
+      <UniqueIdentifier>{5eb62f1f-d497-42b4-9023-c8b9734a545c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Properties\Release">
+      <UniqueIdentifier>{7fab6715-c145-4457-8fdd-33f2c0520251}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\ConfigurationsPATH.props">
@@ -92,20 +94,23 @@
     <None Include="Properties\DesignPatternPATH.props">
       <Filter>Properties</Filter>
     </None>
-    <None Include="Properties\Debug\DirectXTK Debug.props">
-      <Filter>Properties</Filter>
-    </None>
-    <None Include="Properties\Release\DirectXTK Release.props">
-      <Filter>Properties</Filter>
-    </None>
-    <None Include="Properties\Debug\DirectXTKPATH Debug.props">
-      <Filter>Properties</Filter>
-    </None>
-    <None Include="Properties\Release\DirectXTKPATH Release.props">
+    <None Include="Properties\ExtendLibraryConfig.props">
       <Filter>Properties</Filter>
     </None>
     <None Include="Properties\FrameworkConfig.props">
       <Filter>Properties</Filter>
+    </None>
+    <None Include="Properties\Debug\DirectXTK Debug.props">
+      <Filter>Properties\Debug</Filter>
+    </None>
+    <None Include="Properties\Debug\DirectXTKPATH Debug.props">
+      <Filter>Properties\Debug</Filter>
+    </None>
+    <None Include="Properties\Release\DirectXTK Release.props">
+      <Filter>Properties\Release</Filter>
+    </None>
+    <None Include="Properties\Release\DirectXTKPATH Release.props">
+      <Filter>Properties\Release</Filter>
     </None>
   </ItemGroup>
 </Project>

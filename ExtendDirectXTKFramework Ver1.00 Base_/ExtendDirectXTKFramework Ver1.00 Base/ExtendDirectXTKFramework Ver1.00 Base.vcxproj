@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3EF3623F-599B-4721-A568-61CB02C0BDA0}</ProjectGuid>
+    <RootNamespace>ExtendDirectXTKFrameworkVer100Base</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Properties\ConfigurationsPATH.props" />
+    <Import Project="Properties\DesignPatternPATH.props" />
+    <Import Project="Properties\FrameworkConfig.props" />
+    <Import Project="Properties\Debug\DirectXTK Debug.props" />
+    <Import Project="Properties\Debug\DirectXTKPATH Debug.props" />
+    <Import Project="Properties\ExtendLibraryConfig.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Properties\ConfigurationsPATH.props" />
+    <Import Project="Properties\DesignPatternPATH.props" />
+    <Import Project="Properties\FrameworkConfig.props" />
+    <Import Project="Properties\Release\DirectXTK Release.props" />
+    <Import Project="Properties\Release\DirectXTKPATH Release.props" />
+    <Import Project="Properties\ExtendLibraryConfig.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Configurations\stdafx.h" />
+    <ClInclude Include="DesignPatternTemplates\Singleton.h" />
+    <ClInclude Include="Framework\Common\FrameworkCommon.h" />
+    <ClInclude Include="Framework\DeviceController\DeviceController.h" />
+    <ClInclude Include="Framework\DirectXTKController\DirectXTKController.h" />
+    <ClInclude Include="Framework\MainFrame\MainFrame.h" />
+    <ClInclude Include="Framework\ClientWindowController\ClientWindowController.h" />
+    <ClInclude Include="Game\Configurations\GameTypeDefines.h" />
+    <ClInclude Include="Game\Configurations\ProgramConfig.h" />
+    <ClInclude Include="Game\Scenes\SceneBase.h" />
+    <ClInclude Include="Game\Scenes\TestScene.h" />
+    <ClInclude Include="Libraries\Configurations\ExtendLibraryTypeDefines.h" />
+    <ClInclude Include="Libraries\DataManagingLibrary\TextureManager.h" />
+    <ClInclude Include="Libraries\DesignPatternTemplates\Singleton.h" />
+    <ClInclude Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Configurations\stdafx.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Framework\ClientWindowController\ClientWindowController.cpp" />
+    <ClCompile Include="Framework\Common\FrameworkCommon.cpp" />
+    <ClCompile Include="Framework\DeviceController\DeviceController.cpp" />
+    <ClCompile Include="Framework\DirectXTKController\DirectXTKController.cpp" />
+    <ClCompile Include="Framework\MainFrame\MainFrame.cpp" />
+    <ClCompile Include="Game\Scenes\TestScene.cpp" />
+    <ClCompile Include="Libraries\DataManagingLibrary\TextureManager.cpp" />
+    <ClCompile Include="Libraries\RenderingLibrary\ExtendTexture\ExtendTexture.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ConfigurationsPATH.props" />
+    <None Include="Properties\Debug\DirectXTK Debug.props" />
+    <None Include="Properties\Debug\DirectXTKPATH Debug.props" />
+    <None Include="Properties\DesignPatternPATH.props" />
+    <None Include="Properties\FrameworkConfig.props" />
+    <None Include="Properties\Release\DirectXTK Release.props" />
+    <None Include="Properties\Release\DirectXTKPATH Release.props" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

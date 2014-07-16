@@ -1,18 +1,41 @@
+//======================================================================
+//	@headerfile	FrameworkCommon.h
+//	@brief		フレームワークの共通パラメータラッパークラス
+//	@author		Masato Matsumura
+//
+//	@version	1.00
+//	@since		FrameworkVer1.00( 2014/07/10 )
+//	@date		2014/07/10
+//======================================================================
+//	@brief	インクルードガード
+//----------------------------------------------------------------------
 #ifndef _FRAMEWORK_FRAMEWORKCOMMON_INCLUDED_
 #define _FRAMEWORK_FRAMEWORKCOMMON_INCLUDED_
-//#include <memory>
-//#include <tchar.h>
-//#include <string>
-//#include <windows.h>
-//#include <d3d11.h>
+
+//======================================================================
+//	@brief	インクルードファイルは以降に記述
+//----------------------------------------------------------------------
 #include "Singleton.h"
 
+//======================================================================
+//	@brief	マクロ定義は以降に記述
+//----------------------------------------------------------------------
+//■取得子の省略マクロ
+//▼フレームワークの共通パラメータラッパークラス【Framework::CommonDatas】
 #define FRAMEWORKCOMMON		( Framework::CommonDatas::Instance( ) )
+//▼グローバルWinAPIデータクラス【Framework::CommonDatas::WinAPIData】
 #define WINAPIDATA			( Framework::CommonDatas::WinAPIData::Instance( ) )
+//▼グローバルデバイスデータクラス【Framework::CommonDatas::Devices】
 #define D3DDEVICES			( Framework::CommonDatas::Devices::Instance( ) )
+
+
 
 namespace Framework
 {
+//======================================================================
+//	@class	Framework::CommonDatas	"FrameworkCommon.h"
+//	@brief	フレームワークの共通パラメータラッパークラス
+//======================================================================
 	class CommonDatas : public DesignPattern::Singleton<CommonDatas>
 	{
 		//■シングルトン定義
@@ -27,7 +50,10 @@ namespace Framework
 		//■クラス定義
 		public:
 			//■データクラス
-			//▼WinAPI用グローバルデータ
+			//==========================================================
+			//	@class	CommonDatas::WinAPIData "FrameworkCommon.h"
+			//	@brief	フレームワークで使用するWinAPIのグローバルデータ
+			//==========================================================
 			class WinAPIData : public DesignPattern::Singleton<WinAPIData>
 			{
 				//■シングルトン定義
@@ -58,6 +84,13 @@ namespace Framework
 					int nClientHeight;			// デフォルトで指定されているウィンドウ高
 					bool bFullScreen;			// フルスクリーンかどうか
 			};
+
+
+
+			//==========================================================
+			//	@class	CommonDatas::Devices "FrameworkCommon.h"
+			//	@brief	フレームワークで使用するグローバルデバイスデータ
+			//==========================================================
 			//▼グローバルデバイス
 			class Devices : public DesignPattern::Singleton<Devices>
 			{
